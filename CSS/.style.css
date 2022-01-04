@@ -1,0 +1,27 @@
+.samia
+{
+	height: 600px;
+}
+
+h1 {
+	text-align: center;
+}
+table
+{
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #99c2ff;
+}
+td {
+  background-color: 	#ff00ff;
+  border-style: dashed;
+  border-color: #ff00ff;
+} 
