@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #ffff00;
+  padding: 1px;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: Right;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #bfff00;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: square;
+  padding: 30px;
+}
+
+article {
+  float: lieft;
+  padding: 40px;
+  width: 80%;
+  background-color:   #00ffbf;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:#0000ff;
+  padding: 5px;
+  text-align: center;
+  color:    #00ffbf;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 style="color:#40ff00; background-color: #b30000"S>Introduce</h1>
+<p>Aj ker kaj hoscha HTML LAYOUT niya.Nicha amra Foods niya alochona korbo...😍 </p>
+<p>Introduce to food items...🍕🍔🍦</p>
+
+<header>
+  <h1>Food Items</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     <b><li><a href="#">Pizza</a></li></b>
+     <b><li><a href="#">Burger</a></li></b>
+      <b><li><a href="#">Ice cream</a></li></b>
+    </ul>
+  </nav>
+  
+  <article>
+    <img class="samia" src="image/pizza-pic.png"width="100"height="50"image align="right">
+    <h1>PIZZA</h1>
+    <h5>In 2017, the world pizza market was US$128 billion, and in the US it was $44 billion spread over 76,000 pizzerias.[6] Overall, 13% of the U.S. population aged 2 years and over consumed pizza on any given day.[7]</h5>
+<h5>The Associazione Verace Pizza Napoletana (lit. True Neapolitan Pizza Association) is a non-profit organization founded in 1984 with headquarters in Naples that aims to promote traditional Neapolitan pizza.[8] In 2009, upon Italy's request,Neapolitan pizza was registered with the European Union as a Traditional Speciality Guaranteed dish,[9][10] and in 2017.</h5>
+  </article>
+</section>
+
+<footer>
+  <h3>Aisob Dakha Ki Khuda Lagsa</h3>
+</footer>
+
+</body>
+</html>
+
